@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy ASP.Net Core app to Azure Web App - comtity
+name: Build and deploy ASP.Net Core app to Azure Web App - Comtity
 
 on:
   push:
@@ -54,15 +54,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_9BC11759A206444994EEB4B498B82D30 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_0A2F0BC278484AB3B29A60189B30ED6F }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_AB441062F3E14ACE8AD4179502BA4D8A }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_D47203BCAA6840488662644C95E41D85 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_E446A11D9D954E03B9C61A1D0EEF89A3 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_5596FC4E3CE94FE4B775EBE17A07A6B5 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'comtity'
+          app-name: 'Comtity'
           slot-name: 'Production'
           package: .
           
